@@ -3,37 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Website</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Pizza Restaurant Website</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Our Restaurant</h1>
-        <nav>
-            <ul>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="menu">
-            <h2>Our Menu</h2>
-            <p>Explore our delicious offerings!</p>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <img src="/api/placeholder/40/40" alt="Logo">
+                <span class="logo-text">pizza hut</span>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-right">
+                <div class="cart-icon">
+                    <span class="cart-count">2</span>
+                    🛒
+                </div>
+                <button class="contact-btn">Contact Us</button>
+                <div class="hamburger-menu">≡</div>
+            </div>
+        </header>
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>The Perfect Space to Enjoy Fantastic Food</h1>
+                <p>Festive dining at Farthings where we are strong believers in using the very best produce</p>
+                
+                <div class="cta-buttons">
+                    <button class="menu-btn">See Our Menus</button>
+                    <div class="video-btn">
+                        <div class="play-icon"></div>
+                    </div>
+                    <span class="video-text">VIDEO</span>
+                </div>
+                
+                <div class="slider-dots">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            
+            <img src="/api/placeholder/600/600" alt="Grilled meat dish" class="food-image">
+            
+            <div class="featured-product">
+                <span class="weekly-special">Weekly Special</span>
+                <p class="product-price">$90.85</p>
+                <p class="product-name">Sicilian Pizza</p>
+                <div class="rating">★★★★★</div>
+                <img src="/api/placeholder/80/80" alt="Sicilian Pizza" class="product-image">
+            </div>
+            
+            <div class="bird-notification">BirdNay</div>
         </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Learn more about our story and mission.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Get in touch with us for reservations or inquiries.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Restaurant Website. All rights reserved.</p>
-    </footer>
-    <script src="js/script.js"></script>
+    </div>
 </body>
 </html>
