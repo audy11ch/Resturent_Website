@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #000;
+    background-color: #ffffff;
 }
 
 .container {
@@ -59,6 +59,7 @@ nav ul li a {
 
 .cart-icon {
     position: relative;
+    right: 1em;
 }
 
 .cart-count {
@@ -268,4 +269,158 @@ nav ul li a {
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 14px;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+}
+.menu-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.menu-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    min-width: 70px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #eaeaea;
+}
+
+.menu-tab.active {
+    background-color: #e91e63;
+    color: white;
+    position: relative;
+}
+
+.menu-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #e91e63;
+}
+
+.tab-icon {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.tab-label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.menu-content {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.menu-image {
+    flex: 0 0 40%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-image img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.menu-items {
+    flex: 0 0 60%;
+    padding: 30px;
+}
+
+.menu-category {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.item-name {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.item-price {
+    color: #e91e63;
+    font-weight: 600;
+}
+
+.item-description {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Icons */
+.icon-dessert, .icon-steak, .icon-coffee, .icon-burger {
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 8px;
+}
+
+.icon-dessert {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M12,6C8.69,6 6,8.69 6,12c0,3.31 2.69,6 6,6s6-2.69 6-6C18,8.69 15.31,6 12,6zM15.5,12A1.5,1.5 0 0,1 14,13.5A1.5,1.5 0 0,1 12.5,12A1.5,1.5 0 0,1 14,10.5A1.5,1.5 0 0,1 15.5,12zM11.5,12A1.5,1.5 0 0,1 10,13.5A1.5,1.5 0 0,1 8.5,12A1.5,1.5 0 0,1 10,10.5A1.5,1.5 0 0,1 11.5,12z'/%3E%3C/svg%3E");
+}
+
+.menu-tab:not(.active) .icon-dessert {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23e91e63' d='M12,6C8.69,6 6,8.69 6,12c0,3.31 2.69,6 6,6s6-2.69 6-6C18,8.69 15.31,6 12,6zM15.5,12A1.5,1.5 0 0,1 14,13.5A1.5,1.5 0 0,1 12.5,12A1.5,1.5 0 0,1 14,10.5A1.5,1.5 0 0,1 15.5,12zM11.5,12A1.5,1.5 0 0,1 10,13.5A1.5,1.5 0 0,1 8.5,12A1.5,1.5 0 0,1 10,10.5A1.5,1.5 0 0,1 11.5,12z'/%3E%3C/svg%3E");
+}
+
+.icon-steak {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23333' d='M12,3C7.03,3 3,7.03 3,12s4.03,9 9,9s9-4.03 9-9S16.97,3 12,3zM12,8c1.93,0 3.5,1.57 3.5,3.5S13.93,15 12,15s-3.5-1.57-3.5-3.5S10.07,8 12,8z'/%3E%3C/svg%3E");
+}
+
+.icon-coffee {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23e91e63' d='M2,21V19H20V21H2zM20,8V5H18V8H20zM20,3A2,2 0 0,1 22,5V8A2,2 0 0,1 20,10H18V13A4,4 0 0,1 14,17H8A4,4 0 0,1 4,13V3H20zM16,5H6V13A2,2 0 0,0 8,15H14A2,2 0 0,0 16,13V5z'/%3E%3C/svg%3E");
+}
+
+.icon-burger {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23e91e63' d='M2,16H22V17C22,18.1 21.1,19 20,19H4C2.9,19 2,18.1 2,17V16zM20,5C20,3.9 19.1,3 18,3H6C4.9,3 4,3.9 4,5V5H20V5zM22,11V13H2V11C2,9.9 2.9,9 4,9H20C21.1,9 22,9.9 22,11z'/%3E%3C/svg%3E");
 }
