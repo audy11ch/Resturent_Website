@@ -444,3 +444,192 @@ nav ul li a {
     background-color: #e31837;
     border: #ffc107;
 }
+.testimonials-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.testimonials-left {
+    width: 50%;
+}
+
+.testimonials-right {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.section-label {
+    color: #e74c3c;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border: 2px solid #ffd700;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.testimonial-content {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.testimonial-author {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.dot-indicator {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffd700;
+    border-radius: 50%;
+}
+
+.dots {
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+
+.dot.active {
+    background-color: #e74c3c;
+}
+.Container_about-food{
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gallery-img {
+    border-radius: 15px;
+    overflow: hidden;
+}
+.gallery-img.gallery-img-1,
+.gallery-img.gallery-img-2,
+.gallery-img.gallery-img-3 {
+    width: 195px;
+}
+
+.gallery-img.gallery-img-1 img,
+.gallery-img.gallery-img-2 img,
+.gallery-img.gallery-img-3 img {
+    width: 100%;
+}
+
+/* Experts Section */
+.experts-section {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.experts-title {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.experts-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 25%;
+    width: 50%;
+    height: 4px;
+    background-color: #ffd700;
+}
+
+.experts-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.expert-card {
+    width: 30%;
+    text-align: center;
+    position: relative;
+}
+
+.expert-image {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.expert-image img {
+    width: 100%;
+    height: auto;
+}
+
+.expert-info {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.expert-role {
+    color: #e74c3c;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.expert-name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.expert-signature {
+    width: 80px;
+    opacity: 0.7;
+}
