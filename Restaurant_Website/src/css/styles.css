@@ -7,6 +7,7 @@
 
 body {
     background-color: #ffffff;
+
 }
 
 .container {
@@ -88,7 +89,6 @@ nav ul li a {
 }
 
 .hamburger-menu {
-    display: none;
     cursor: pointer;
 }
 
@@ -240,7 +240,10 @@ nav ul li a {
     height: 100%;
     object-fit: cover;
 }
-
+.card-food img{
+    width: 380px;
+    height: 490px;
+}
 /* Food image elements */
 .tomato1 {
     position: absolute;
@@ -274,11 +277,18 @@ nav ul li a {
     display: flex;
     align-items: center;
 }
+.detail-about-food{
+    max-width: auto;
+    margin: 0 auto;
+}
 .menu-container {
     max-width: 800px;
     margin: 0 auto;
     border-radius: 10px;
     overflow: hidden;
+}
+.topic-red{
+    color: #F3274C;
 }
 
 .menu-tabs {
