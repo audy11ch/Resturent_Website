@@ -577,6 +577,13 @@ nav ul li a {
             .gallery-layout {
                 height: 600px;
             }
+            .dots{
+                display: flex
+                ;
+                    gap: 5px;
+                    margin-top: 20px;
+                    justify-content: center;
+            }
             
             .image-box {
                 width: 150px;
@@ -744,4 +751,328 @@ nav ul li a {
     background: radial-gradient(ellipse at center, rgba(255,165,0,0.8) 0%, rgba(255,140,0,0.4) 50%, rgba(255,140,0,0) 100%);
     filter: blur(5px);
     z-index: 1;
+}
+/* ======== Common Responsive Styles ======== */
+@media (max-width: 1200px) {
+    .hero-content {
+        max-width: 60%;
+    }
+    
+    .featured-product {
+        width: 250px;
+    }
+    .dots{
+        display: flex
+        ;
+            gap: 5px;
+            margin-top: 20px;
+            justify-content: center;
+    }
+}
+
+/* ======== Tablet Styles ======== */
+@media (max-width: 992px) {
+    .dots{
+        display: flex
+        ;
+            gap: 5px;
+            margin-top: 20px;
+            justify-content: center;
+    }
+    /* Header & Navigation */
+    nav ul {
+        gap: 10px;
+    }
+    
+    nav ul li {
+        margin: 0 5px;
+    }
+    
+    /* Hero Section */
+    .hero-content {
+        max-width: 70%;
+    }
+    
+    .hero h1 {
+        font-size: 36px;
+    }
+    
+    .featured-product {
+        width: 220px;
+        right: 30px;
+        padding: 10px;
+    }
+    
+    .product-image {
+        width: 80px;
+        height: 80px;
+    }
+    
+    /* About Food Section */
+    .detail-about-food {
+        padding: 30px 20px !important;
+    }
+    
+    /* Menu Content */
+    .menu-content {
+        flex-direction: column;
+    }
+    
+    .menu-image, .menu-items {
+        flex: 0 0 100%;
+    }
+    
+    .menu-image {
+        height: 300px;
+    }
+    
+    /* Testimonials */
+    .testimonials-section {
+        flex-direction: column;
+    }
+    
+    .testimonials-left, .testimonials-right {
+        width: 100%;
+    }
+    
+    .testimonials-right {
+        margin-top: 50px;
+    }
+    
+    .gallery-layout {
+        height: 450px;
+    }
+    
+    /* Experts Section */
+    .experts-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 80px 20px;
+    }
+    
+    .expert-card {
+        width: 45%;
+        margin-bottom: 60px;
+    }
+}
+
+/* ======== Mobile Styles ======== */
+@media (max-width: 768px) {
+    .dots{
+        display: flex
+        ;
+            gap: 5px;
+            margin-top: 20px;
+            justify-content: center;
+    }
+    body {
+        font-size: 14px;
+    }
+    
+    /* Header */
+    header {
+        padding: 15px;
+    }
+    
+    .logo-text {
+        font-size: 16px;
+    }
+    
+    nav {
+        display: none; /* Hide the regular menu */
+    }
+    
+    .hamburger-menu {
+        display: block; /* Show the hamburger menu */
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding: 50px 15px;
+    }
+    
+    .hero-content {
+        max-width: 100%;
+    }
+    
+    .hero h1 {
+        font-size: 28px;
+    }
+    
+    .featured-product {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        width: 100%;
+        margin-top: 40px;
+        padding: 15px;
+    }
+    
+    .weekly-special {
+        top: -15px;
+    }
+    
+    /* About Food Section */
+    .detail-about-food {
+        padding: 30px 15px !important;
+    }
+    
+    /* Menu Tabs */
+    .menu-tabs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .menu-tab {
+        width: calc(50% - 10px);
+        margin-bottom: 10px;
+    }
+    
+    /* Testimonials */
+    .testimonial-card {
+        padding: 15px;
+    }
+    
+    .section-title {
+        font-size: 26px;
+    }
+    
+    .gallery-layout {
+        height: 600px;
+    }
+    
+    .image-box {
+        width: 150px;
+        height: 150px;
+    }
+    
+    /* Experts Section */
+    .expert-card {
+        width: 100%;
+    }
+    
+    .expert-info {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* ======== Small Mobile Styles ======== */
+@media (max-width: 576px) {
+    .dots{
+        display: flex
+        ;
+            gap: 5px;
+            margin-top: 20px;
+            justify-content: center;
+    }
+    /* Header */
+    .contact-btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    
+    /* Hero Section */
+    .hero h1 {
+        font-size: 24px;
+    }
+    
+    .cta-buttons {
+        flex-wrap: wrap;
+    }
+    
+    .menu-btn {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    
+    /* Restaurant Card */
+    .card {
+        width: 160px;
+        margin: 0 auto;
+    }
+    
+    .card-image {
+        height: 200px;
+    }
+    
+    /* Menu Items */
+    .menu-item {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .menu-category {
+        font-size: 20px;
+    }
+    
+    /* Experts */
+    .experts-title {
+        font-size: 24px;
+    }
+    
+    .expert-info {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* ========= Additional Header Responsive Styles ========= */
+@media (max-width: 768px) {
+    .dots{
+        display: flex
+        ;
+            gap: 5px;
+            margin-top: 20px;
+            justify-content: center;
+    }
+    .header-right {
+        gap: 10px;
+    }
+    
+    /* Mobile Menu Overlay (add to your HTML/JS as needed) */
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1000;
+        display: none;
+    }
+    
+    .mobile-menu.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mobile-menu ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .mobile-menu ul li {
+        margin: 15px 0;
+        text-align: center;
+    }
+    
+    .mobile-menu ul li a {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    
+    .mobile-menu-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
 }

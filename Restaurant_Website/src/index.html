@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Restaurant Website</title>
     <link rel="stylesheet" href="css/styles.css">
@@ -72,24 +73,27 @@
             </div>
             
         </section>
-        <div class="detail-about-food pt-5 px-5 ">
-            <div class="row">
-                <div class="col-lg-6">
-                    <p class="topic-red fs-2 ">About The Food Restaurant</p>
-                    <h2 class="fw-bold fs-1">New Ground with Dished to be Enjoyed</h2>
-                </div>
-                <div class="col-lg-6">
-                    <span class="fs-5">Nisl quam nestibulum ac quam nec odio eleme aucan ligula. Orci varius nat oque pena tibus et urient monte nascete ridiculus mus nellentesq um ac qu am nec odio rbine. Nisl quam nestibu aucan ligula.</span>
-                    <div class="d-flex align-items-center gap-3 pt-3">
-                        <img src="img/proflie.jpg" class="rounded-circle" alt="...">
-                        <div>
-                            <h1 class="pt-2 fw-bold">Willimes James</h1>
-                            <p>Director and Chief Operations Officer</p>
-                        </div>
-                    </div>
+
+<!-- ตัวอย่างการแก้ไขส่วน About Food สำหรับ Responsive -->
+<div class="detail-about-food pt-5 px-3 px-md-5">
+    <div class="row g-4">
+        <div class="col-12 col-lg-6">
+            <p class="topic-red fs-2">About The Food Restaurant</p>
+            <h2 class="fw-bold fs-1">New Ground with Dished to be Enjoyed</h2>
+        </div>
+        <div class="col-12 col-lg-6">
+            <span class="fs-5">Nisl quam nestibulum ac quam nec odio eleme aucan ligula. Orci varius nat oque pena tibus et urient monte nascete ridiculus mus nellentesq um ac qu am nec odio rbine. Nisl quam nestibu aucan ligula.</span>
+            <div class="d-flex align-items-center gap-3 pt-3">
+                <img src="img/proflie.jpg" class="rounded-circle profile-image" alt="...">
+                <div>
+                    <h1 class="pt-2 fw-bold fs-4 fs-md-1">Willimes James</h1>
+                    <p>Director and Chief Operations Officer</p>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
         <div class="card">
             <div class="card-image">
                 <img src="../src/img/card1.png" alt="Juicy steak with cheese pull">
@@ -160,42 +164,45 @@
             </div>
         </div>
         <section class="Container_about-food">
-            <section class="testimonials-section">
-                <div class="testimonials-left">
-                    <p class="section-label">TESTIMONIALS & REVIEWS</p>
-                    <h2 class="section-title">Our Customer Feedbacks</h2>
-                    
-                    <div class="testimonial-card">
-                        <p class="testimonial-content">A good restaurant is like a vacation; it transports you, and it becomes a lot more than just about the food. All great deeds and all great thoughts</p>
-                        <p class="testimonial-author">Bratlee Hamint</p>
-                        <div class="dot-indicator"></div>
+<!-- ตัวอย่างการปรับปรุง Testimonials Section -->
+<section class="testimonials-section">
+    <div class="row">
+        <div class="col-12 col-lg-6 testimonials-left mb-4 mb-lg-0">
+            <p class="section-label">TESTIMONIALS & REVIEWS</p>
+            <h2 class="section-title">Our Customer Feedbacks</h2>
+            
+            <div class="testimonial-card">
+                <p class="testimonial-content">A good restaurant is like a vacation; it transports you, and it becomes a lot more than just about the food. All great deeds and all great thoughts</p>
+                <p class="testimonial-author">Bratlee Hamint</p>
+                <div class="dot-indicator"></div>
+            </div>
+            
+            <div class="dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+        
+        <div class="col-12 col-lg-6 testimonials-right">
+            <div class="gallery-container mx-auto">
+                <div class="gallery-layout">
+                    <div class="image-box coffee-box">
+                        <img src="img/banner1-292x292.png.png" alt="กาแฟและเมล็ดกาแฟบนโต๊ะไม้">
                     </div>
                     
-                    <div class="dots">
-                        <div class="dot active"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
+                    <div class="image-box red-box">
+                        <img src="img/Background.png" alt="พื้นหลังสีแดง">
+                    </div>
+                    
+                    <div class="image-box dessert-box">
+                        <img src="img/Container.png" alt="ขนมหวานในแก้วพร้อมผลเบอร์รี่">
                     </div>
                 </div>
-                
-                <div class="testimonials-right">
-                    <div class="gallery-container">
-                        <div class="gallery-layout">
-                            <div class="image-box coffee-box">
-                                <img src="img/banner1-292x292.png.png" alt="กาแฟและเมล็ดกาแฟบนโต๊ะไม้">
-                            </div>
-                            
-                            <div class="image-box red-box">
-                                <img src="img/Background.png" alt="พื้นหลังสีแดง">
-                            </div>
-                            
-                            <div class="image-box dessert-box">
-                                <img src="img/Container.png" alt="ขนมหวานในแก้วพร้อมผลเบอร์รี่">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
+        </div>
+    </div>
+</section>
             
             <!-- Experts Section -->
             <section class="experts-section">
@@ -237,6 +244,6 @@
                 </div>
             </section>
         </section>
-
+        <script src="script.js"></script>
 </body>
 </html>
