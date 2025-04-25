@@ -10,6 +10,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
         <!-- Header -->
         <header>
             <div class="logo">
@@ -63,14 +64,16 @@
             </div>            
             <div class="featured-product">
                 <span class="weekly-special">Weekly Special</span>
-                <p class="product-price">$90.85</p>
-                <p class="product-name">Sicilian Pizza</p>
-                <div class="rating">★★★★★</div>
+                <div class="detail-promo">
+                    <p class="product-price">$90.85</p>
+                    <p class="product-name">Sicilian Pizza</p>
+                    <div class="rating">★★★★★</div>
+                </div>
                 <img src="img/pizzacircle.png" alt="Sicilian Pizza" class="product-image">
             </div>
             
         </section>
-        <div class="detail-about-food pt-3 px-5 ">
+        <div class="detail-about-food pt-5 px-5 ">
             <div class="row">
                 <div class="col-lg-6">
                     <p class="topic-red fs-2 ">About The Food Restaurant</p>
@@ -88,14 +91,25 @@
                 </div>
             </div>
         </div>
-        <div class="card-food d-flex pt-5 gap-5 align-items-center justify-content-center	">
-            <img src="img/card1.png" alt="">
-            <img src="img/card2.png" alt="">
-            <img src="img/card3.png" alt="">
-
-        </div>
-        <div>
-            <img src="https://placehold.co/400" alt="">
+        <div class="card-food d-flex pt-5 gap-5 align-items-center justify-content-center pb-5">
+            <div class="card-contrainer">
+                <div class="custom-card">
+                    <img src="img/card1.png" alt="Restaurant" class="card-img">
+                    <div class="card-label">Restaurant</div>
+                </div>
+            </div>
+            <div class="card-contrainer">
+                <div class="card-border">
+                    <img src="img/card2.png" alt="">
+                    <div class="card-label">Coctail Bar</div>
+                </div>
+            </div>
+            <div class="card-contrainer">
+                <div class="card-border">
+                    <img src="img/card3.png" alt="">
+                    <div class="card-label">Private Dining</div>
+                </div>
+            </div>
         </div>
         <div class="menu-container">
             <div class="menu-tabs">
@@ -158,5 +172,6 @@
                     </div>
                 </div>
             </div>
+        </div>
 </body>
 </html>
