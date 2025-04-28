@@ -1169,10 +1169,7 @@ nav ul li a {
     justify-content: center;
     padding: 100px;
 }
-.text-card{
-    background-color: #FFD40D;
-    padding: 10px;
-}
+
 .price {
     width: 100px;
     height: 100px;
@@ -1185,4 +1182,15 @@ nav ul li a {
 }
 .discover-menu-section{
     margin-bottom: 7em;
+}
+.border-frame {
+    border: 5px solid #ffc107;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 30px; 
+    pointer-events: none; 
+}
+.text-card{
+    width: 95%;
 }
