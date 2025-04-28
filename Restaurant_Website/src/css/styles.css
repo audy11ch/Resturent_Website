@@ -237,10 +237,7 @@ nav ul li a {
     height: 100%;
     object-fit: cover;
 }
-.card-food img{
-    width: 380px;
-    height: 490px;
-}
+
 /* Food image elements */
 .tomato1 {
     position: absolute;
@@ -437,13 +434,6 @@ nav ul li a {
     justify-content: center;
     text-align: left;
 }
-.card-contrainer{
-    background-color: #8c52ff;
-}
-.card-border{
-    background-color: #e31837;
-    border: #ffc107;
-}
 .testimonials-section {
     display: flex;
     justify-content: space-between;
@@ -533,7 +523,6 @@ nav ul li a {
     flex-wrap: wrap;
     gap: 15px;
 }
-
 .gallery-img {
     border-radius: 15px;
     overflow: hidden;
@@ -543,19 +532,16 @@ nav ul li a {
 .gallery-img.gallery-img-3 {
     width: 195px;
 }
-
 .gallery-img.gallery-img-1 img,
 .gallery-img.gallery-img-2 img,
 .gallery-img.gallery-img-3 img {
     width: 100%;
 }
-
 /* Experts Section */
 .experts-section {
     text-align: center;
     padding-top: 30px;
 }
-
 .experts-title {
     font-size: 36px;
     font-weight: 800;
@@ -563,7 +549,6 @@ nav ul li a {
     position: relative;
     display: inline-block;
 }
-
 .experts-title::after {
     content: "";
     position: absolute;
@@ -573,27 +558,23 @@ nav ul li a {
     height: 4px;
     background-color: #ffd700;
 }
-
 .experts-cards {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
     gap: 20px;
 }
-
 .expert-card {
     width: 30%;
     text-align: center;
     position: relative;
 }
-
 .expert-image {
     width: 80%;
     margin: 0 auto;
     position: relative;
     z-index: 1;
 }
-
 .expert-image img {
     width: 100%;
     height: auto;
@@ -632,4 +613,19 @@ nav ul li a {
 .expert-signature {
     width: 80px;
     opacity: 0.7;
+}
+.card-label{
+    background-color: #FFD40D;
+    padding: 5px 5px;
+    text-align: center;
+}
+.card-border{
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px; 
+    box-sizing: border-box;
+    position: relative;
+}
+.card-contrainer{
+    width: 413px;
 }
