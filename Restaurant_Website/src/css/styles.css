@@ -625,6 +625,20 @@ nav ul li a {
     box-sizing: border-box;
     position: relative;
 }
-.card-contrainer{
+.card-container{
     width: 413px;
+}
+.discover-menu-section{
+    text-align: center;
+}
+.dis-menu-img{
+    width: 630px;
+    height: 335px;
+}
+.dis-menu-container{
+    position: relative;
+}
+.dis-menu-text{
+    position: absolute;
+    top: 20px;
 }
