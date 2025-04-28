@@ -237,7 +237,10 @@ nav ul li a {
     height: 100%;
     object-fit: cover;
 }
-
+.card-food img{
+    width: 380px;
+    height: 490px;
+}
 /* Food image elements */
 .tomato1 {
     position: absolute;
@@ -433,6 +436,13 @@ nav ul li a {
     justify-content: center;
     text-align: left;
 }
+.card-contrainer{
+    background-color: #8c52ff;
+}
+.card-border{
+    background-color: #e31837;
+    border: #ffc107;
+}
 .testimonials-section {
     display: flex;
     justify-content: space-between;
@@ -517,30 +527,91 @@ nav ul li a {
     border-radius: 10px;
     overflow: hidden;
 }
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-.gallery-img {
-    border-radius: 15px;
-    overflow: hidden;
-}
-.gallery-img.gallery-img-1,
-.gallery-img.gallery-img-2,
-.gallery-img.gallery-img-3 {
-    width: 195px;
-}
-.gallery-img.gallery-img-1 img,
-.gallery-img.gallery-img-2 img,
-.gallery-img.gallery-img-3 img {
-    width: 100%;
-}
+   .gallery-container {
+            width: 100%;
+            max-width: 500px;
+            position: relative;
+        }
+        
+        .gallery-layout {
+            position: relative;
+            width: 100%;
+            height: 400px;
+        }
+        
+        .image-box {
+            position: absolute;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 180px;
+            height: 180px;
+        }
+        
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .coffee-box {
+            top: 0;
+            right: 30%;
+            z-index: 1;
+        }
+        
+        .red-box {
+            top: 120px;
+            left: 0;
+            z-index: 2;
+        }
+        
+        .dessert-box {
+            top: 120px;
+            right: 0;
+            z-index: 3;
+        }
+        
+        @media (max-width: 500px) {
+            .gallery-layout {
+                height: 600px;
+            }
+            .dots{
+                display: flex
+                ;
+                    gap: 5px;
+                    margin-top: 20px;
+                    justify-content: center;
+            }
+            
+            .image-box {
+                width: 150px;
+                height: 150px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .coffee-box {
+                top: 0;
+                right: auto;
+            }
+            
+            .red-box {
+                top: 200px;
+                left: 50%;
+            }
+            
+            .dessert-box {
+                top: 400px;
+                right: auto;
+            }
+        }
 /* Experts Section */
 .experts-section {
     text-align: center;
     padding-top: 30px;
 }
+
 .experts-title {
     font-size: 36px;
     font-weight: 800;
@@ -548,6 +619,7 @@ nav ul li a {
     position: relative;
     display: inline-block;
 }
+
 .experts-title::after {
     content: "";
     position: absolute;
@@ -557,23 +629,27 @@ nav ul li a {
     height: 4px;
     background-color: #ffd700;
 }
+
 .experts-cards {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
     gap: 20px;
 }
+
 .expert-card {
     width: 30%;
     text-align: center;
     position: relative;
 }
+
 .expert-image {
     width: 80%;
     margin: 0 auto;
     position: relative;
     z-index: 1;
 }
+
 .expert-image img {
     width: 100%;
     height: auto;
@@ -613,38 +689,470 @@ nav ul li a {
     width: 80px;
     opacity: 0.7;
 }
-.card-label{
-    background-color: #FFD40D;
-    padding: 5px 5px;
-    text-align: center;
-}
-.card-border{
-    border-radius: 10px;
+.card {
+    width: 200px;
+    position: relative;
+    background-color: black;
+    border-radius: 12px;
     overflow: hidden;
-    padding: 10px; 
-    box-sizing: border-box;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    border: 2px solid #ffd700;
+    border-radius: 9px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.card-image {
+    width: 100%;
+    height: 260px;
+    background-color: #000;
     position: relative;
 }
-.card-container{
-    width: 413px;
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.discover-menu-section{
+
+.card-label {
+    background-color: #ffd700;
+    color: #000;
+    padding: 8px 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+/* For the cheese/sauce splash effect */
+.cheese-splash {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 60px;
+    background: radial-gradient(ellipse at center, rgba(255,165,0,0.8) 0%, rgba(255,140,0,0.4) 50%, rgba(255,140,0,0) 100%);
+    filter: blur(5px);
+    z-index: 1;
+}
+/* ======== Common Responsive Styles ======== */
+@media (max-width: 1200px) {
+    .hero-content {
+        max-width: 60%;
+    }
+    
+    .featured-product {
+        width: 250px;
+    }
+    .dots{
+        display: flex
+        ;
+            gap: 5px;
+            margin-top: 20px;
+            justify-content: center;
+    }
+}
+
+/* ======== Tablet Styles ======== */
+@media (max-width: 992px) {
+    .dots{
+        display: flex
+        ;
+            gap: 5px;
+            margin-top: 20px;
+            justify-content: center;
+    }
+    /* Header & Navigation */
+    nav ul {
+        gap: 10px;
+    }
+    
+    nav ul li {
+        margin: 0 5px;
+    }
+    
+    /* Hero Section */
+    .hero-content {
+        max-width: 70%;
+    }
+    
+    .hero h1 {
+        font-size: 36px;
+    }
+    
+    .featured-product {
+        width: 220px;
+        right: 30px;
+        padding: 10px;
+    }
+    
+    .product-image {
+        width: 80px;
+        height: 80px;
+    }
+    
+    /* About Food Section */
+    .detail-about-food {
+        padding: 30px 20px !important;
+    }
+    
+    /* Menu Content */
+    .menu-content {
+        flex-direction: column;
+    }
+    
+    .menu-image, .menu-items {
+        flex: 0 0 100%;
+    }
+    
+    .menu-image {
+        height: 300px;
+    }
+    
+    /* Testimonials */
+    .testimonials-section {
+        flex-direction: column;
+    }
+    
+    .testimonials-left, .testimonials-right {
+        width: 100%;
+    }
+    
+    .testimonials-right {
+        margin-top: 50px;
+    }
+    
+    .gallery-layout {
+        height: 450px;
+    }
+    
+    /* Experts Section */
+    .experts-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 80px 20px;
+    }
+    
+    .expert-card {
+        width: 45%;
+        margin-bottom: 60px;
+    }
+}
+
+/* ======== Mobile Styles ======== */
+@media (max-width: 768px) {
+    .dots{
+        display: flex
+        ;
+            gap: 5px;
+            margin-top: 20px;
+            justify-content: center;
+    }
+    body {
+        font-size: 14px;
+    }
+    
+    /* Header */
+    header {
+        padding: 15px;
+    }
+    
+    .logo-text {
+        font-size: 16px;
+    }
+    
+    nav {
+        display: none; /* Hide the regular menu */
+    }
+    
+    .hamburger-menu {
+        display: block; /* Show the hamburger menu */
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding: 50px 15px;
+    }
+    
+    .hero-content {
+        max-width: 100%;
+    }
+    
+    .hero h1 {
+        font-size: 28px;
+    }
+    
+    .featured-product {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        width: 100%;
+        margin-top: 40px;
+        padding: 15px;
+    }
+    
+    .weekly-special {
+        top: -15px;
+    }
+    
+    /* About Food Section */
+    .detail-about-food {
+        padding: 30px 15px !important;
+    }
+    
+    /* Menu Tabs */
+    .menu-tabs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .menu-tab {
+        width: calc(50% - 10px);
+        margin-bottom: 10px;
+    }
+    
+    /* Testimonials */
+    .testimonial-card {
+        padding: 15px;
+    }
+    
+    .section-title {
+        font-size: 26px;
+    }
+    
+    .gallery-layout {
+        height: 600px;
+    }
+    
+    .image-box {
+        width: 150px;
+        height: 150px;
+    }
+    
+    /* Experts Section */
+    .expert-card {
+        width: 100%;
+    }
+    
+    .expert-info {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* ======== Small Mobile Styles ======== */
+@media (max-width: 576px) {
+    .dots{
+        display: flex
+        ;
+            gap: 5px;
+            margin-top: 20px;
+            justify-content: center;
+    }
+    /* Header */
+    .contact-btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    
+    /* Hero Section */
+    .hero h1 {
+        font-size: 24px;
+    }
+    
+    .cta-buttons {
+        flex-wrap: wrap;
+    }
+    
+    .menu-btn {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    
+    /* Restaurant Card */
+    .card {
+        width: 160px;
+        margin: 0 auto;
+    }
+    
+    .card-image {
+        height: 200px;
+    }
+    
+    /* Menu Items */
+    .menu-item {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .menu-category {
+        font-size: 20px;
+    }
+    
+    /* Experts */
+    .experts-title {
+        font-size: 24px;
+    }
+    
+    .expert-info {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* ========= Additional Header Responsive Styles ========= */
+@media (max-width: 768px) {
+    .dots{
+        display: flex
+        ;
+            gap: 5px;
+            margin-top: 20px;
+            justify-content: center;
+    }
+    .header-right {
+        gap: 10px;
+    }
+    
+    /* Mobile Menu Overlay (add to your HTML/JS as needed) */
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1000;
+        display: none;
+    }
+    
+    .mobile-menu.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mobile-menu ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .mobile-menu ul li {
+        margin: 15px 0;
+        text-align: center;
+    }
+    
+    .mobile-menu ul li a {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    
+    .mobile-menu-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+/* CSS สำหรับ Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu.active {
+    display: flex;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-menu ul li {
+    margin: 20px 0;
     text-align: center;
 }
-.dis-menu-img{
-    width: 630px;
-    height: 335px;
+
+.mobile-menu ul li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 .dis-menu-postion{
     position: relative;
 }
-.dis-menu-text{
+.mobile-menu ul li a:hover {
+    color: #ffc107;
+}
+
+.mobile-menu-close {
     position: absolute;
-    top: 20%;
-    right: 50%;
-    text-align: left;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 .dis-menu-text h1 {
     color: rgb(255, 255, 255);
     color: white;
   }
+
+
+
+/* เพิ่ม styles สำหรับแสดง/ซ่อน navigation ตามขนาดหน้าจอ */
+@media (max-width: 768px) {
+    nav.desktop-nav {
+        display: none; /* ซ่อน nav ปกติบนมือถือ */
+    }
+    
+    .hamburger-menu {
+        display: block; /* แสดงปุ่มแฮมเบอร์เกอร์บนมือถือ */
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburger-menu {
+        display: none; /* ซ่อนปุ่มแฮมเบอร์เกอร์บนเดสก์ท็อป */
+    }
+    
+    .mobile-menu {
+        display: none !important; /* ซ่อน mobile menu บนเดสก์ท็อปเสมอ */
+    }
+}
