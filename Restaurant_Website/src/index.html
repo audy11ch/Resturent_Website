@@ -1,78 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Restaurant Website</title>
-    <link rel="stylesheet" href="../src/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
-        <!-- Header -->
-        <header>
-            <div class="logo">
-                <img src="img/logo.png" alt="Logo">
-                <span class="logo-text">pizza hut</span>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+            <span class="logo-text">pizza hut</span>
+        </div>
+        <div class="mobile-menu">
+            <button class="mobile-menu-close">×</button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-right">
+            <div class="cart-icon">
+                <span class="cart-count">2</span>
+                <button class="btn"><i class="fa-solid fa-basket-shopping"></i></button>
             </div>
-            
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            
-            <div class="header-right">
-                <div class="cart-icon">
-                    <span class="cart-count">2</span>
-                    <button class="btn"><i class="fa-solid fa-basket-shopping"></i></button>
-                </div>
-                <button class="contact-btn">Contact Us</button>
-                <div class="hamburger-menu">
-                    <button class="btn"><i class="fa-solid fa-bars"></i></button>
-                </div>
+            <button class="contact-btn">Contact Us</button>
+            <div class="hamburger-menu">
+                <button class="btn"><i class="fa-solid fa-bars"></i></button>
             </div>
-        </header>
-        
-        
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1>The Perfect Space to Enjoy Fantastic Food</h1>
-                <p>Festive dining at Farthings where we are strong believers in using the very best produce</p>
-                
-                <div class="cta-buttons">
-                    <button class="menu-btn">See Our Menus</button>
-                    <div class="video-btn">
-                        <div class="play-icon"></div>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>The Perfect Space to Enjoy Fantastic Food</h1>
+            <p>Festive dining at Farthings where we are strong believers in using the very best produce</p>
+
+            <div class="cta-buttons">
+                <button class="menu-btn">See Our Menus</button>
+                <div class="video-btn">
+                    <div class="play-icon"></div>
+                </div>
+                <span class="video-text">VIDEO</span>
+            </div>
+
+            <div class="slider-dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+        <div class="featured-product">
+            <span class="weekly-special">Weekly Special</span>
+            <div class="detail-promo">
+                <p class="product-price">$90.85</p>
+                <p class="product-name">Sicilian Pizza</p>
+                <div class="rating">★★★★★</div>
+            </div>
+            <img src="img/pizzacircle.png" alt="Sicilian Pizza" class="product-image">
+        </div>
+
+    </section>
+
+    <!-- ตัวอย่างการแก้ไขส่วน About Food สำหรับ Responsive -->
+    <div class="detail-about-food pt-5 px-3 px-md-5">
+        <div class="row g-4">
+            <div class="col-12 col-lg-6">
+                <p class="topic-red fs-2">About The Food Restaurant</p>
+                <h2 class="fw-bold fs-1">New Ground with Dished to be Enjoyed</h2>
+            </div>
+            <div class="col-12 col-lg-6">
+                <span class="fs-5">Nisl quam nestibulum ac quam nec odio eleme aucan ligula. Orci varius nat oque pena
+                    tibus et urient monte nascete ridiculus mus nellentesq um ac qu am nec odio rbine. Nisl quam nestibu
+                    aucan ligula.</span>
+                <div class="d-flex align-items-center gap-3 pt-3">
+                    <img src="img/proflie.jpg" class="rounded-circle profile-image" alt="...">
+                    <div>
+                        <h1 class="pt-2 fw-bold fs-4 fs-md-1">Willimes James</h1>
+                        <p>Director and Chief Operations Officer</p>
                     </div>
-                    <span class="video-text">VIDEO</span>
                 </div>
-                
-                <div class="slider-dots">
-                    <div class="dot active"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                </div>
-            </div>            
-            <div class="featured-product">
-                <span class="weekly-special">Weekly Special</span>
-                <div class="detail-promo">
-                    <p class="product-price">$90.85</p>
-                    <p class="product-name">Sicilian Pizza</p>
-                    <div class="rating">★★★★★</div>
-                </div>
-                <img src="img/pizzacircle.png" alt="Sicilian Pizza" class="product-image">
             </div>
-            
-        </section>
-        <div class="detail-about-food pt-5 px-5 ">
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-image">
+            <img src="img/card1.png" alt="Juicy steak with cheese pull">
+            <div class="cheese-splash"></div>
+            <div class="card-label">Restaurant</div>
+        </div>
+    </div>
+    <div class="menu-container">
+        <div class="menu-tabs">
+            <div class="menu-tab active">
+                <div class="icon-dessert"></div>
+                <span class="tab-label">Dessert</span>
+            </div>
+            <div class="menu-tab">
+                <div class="icon-steak"></div>
+                <span class="tab-label">Steak</span>
+            </div>
+            <div class="menu-tab">
+                <div class="icon-coffee"></div>
+                <span class="tab-label">Coffee</span>
+            </div>
+            <div class="menu-tab">
+                <div class="icon-burger"></div>
+                <span class="tab-label">Burger</span>
+            </div>
+        </div>
+
+        <div class="menu-content">
+            <div class="menu-image">
+                <img src="img/image.png" alt="BBQ Chicken">
+            </div>
+
+            <div class="menu-items">
+                <h2 class="menu-category">BBQ</h2>
+
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Sake BBQ sauce</h3>
+                        <span class="item-price">$9.00</span>
+                    </div>
+                    <p class="item-description">radish, black sesame seeds, coriander</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">BBQ baby back ribs</h3>
+                        <span class="item-price">$16.00</span>
+                    </div>
+                    <p class="item-description">sticky plum glaze, charred lime, chilli cashews</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Half smoked chicken</h3>
+                        <span class="item-price">$34.00</span>
+                    </div>
+                    <p class="item-description">miso butter glaze, charred lime wedge, sake bbq</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-header">
+                        <h3 class="item-name">Dusted chicken wings</h3>
+                        <span class="item-price">$40.00</span>
+                    </div>
+                    <p class="item-description">tossed in Korean hot sauce, pickled radish</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="Container_about-food">
+        <!-- ตัวอย่างการปรับปรุง Testimonials Section -->
+        <section class="testimonials-section">
             <div class="row">
                 <div class="col-lg-6">
                     <p class="topic-red fs-2 ">About The Food Restaurant</p>
@@ -177,75 +284,67 @@
                 <div class="testimonials-left">
                     <p class="section-label">TESTIMONIALS & REVIEWS</p>
                     <h2 class="section-title">Our Customer Feedbacks</h2>
-                    
+
                     <div class="testimonial-card">
-                        <p class="testimonial-content">A good restaurant is like a vacation; it transports you, and it becomes a lot more than just about the food. All great deeds and all great thoughts</p>
+                        <p class="testimonial-content">A good restaurant is like a vacation; it transports you, and it
+                            becomes a lot more than just about the food. All great deeds and all great thoughts</p>
                         <p class="testimonial-author">Bratlee Hamint</p>
                         <div class="dot-indicator"></div>
                     </div>
-                    
+
                     <div class="dots">
                         <div class="dot active"></div>
                         <div class="dot"></div>
                         <div class="dot"></div>
                     </div>
                 </div>
-                
-                <div class="testimonials-right">
-                    <div class="image-gallery">
-                        <div class="gallery-img gallery-img-1">
-                            <img src="../src/img/banner1-292x292.png.png" alt="Coffee cup with beans">
-                        </div>
-                        <div class="gallery-img gallery-img-2">
-                            <img src="../src/img/Background.png" alt="Dessert with berries">
-                        </div>
-                        <div class="gallery-img gallery-img-3">
-                            <img src="../src/img/Container.png" alt="Red sauce or drink">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- Experts Section -->
-            <section class="experts-section">
-                <h2 class="experts-title">Meet Our Experts</h2>
-                
-                <div class="experts-cards">
-                    <div class="expert-card">
-                        <div class="expert-image">
-                            <img src="/api/placeholder/250/250" alt="Chef Thomas Walim">
-                        </div>
-                        <div class="expert-info">
-                            <p class="expert-role">Dessert specialist</p>
-                            <h3 class="expert-name">Thomas Walim</h3>
-                            <img src="/api/placeholder/80/30" alt="Signature" class="expert-signature">
-                        </div>
-                    </div>
-                    
-                    <div class="expert-card">
-                        <div class="expert-image">
-                            <img src="/api/placeholder/250/250" alt="Chef James Jhonson">
-                        </div>
-                        <div class="expert-info">
-                            <p class="expert-role">Chef Master</p>
-                            <h3 class="expert-name">James Jhonson</h3>
-                            <img src="/api/placeholder/80/30" alt="Signature" class="expert-signature">
-                        </div>
-                    </div>
-                    
-                    <div class="expert-card">
-                        <div class="expert-image">
-                            <img src="/api/placeholder/250/250" alt="Chef Room Minal">
-                        </div>
-                        <div class="expert-info">
-                            <p class="expert-role">Dessert specialist</p>
-                            <h3 class="expert-name">Room Minal</h3>
-                            <img src="/api/placeholder/80/30" alt="Signature" class="expert-signature">
+
+                <div class="col-12 col-lg-6 testimonials-right">
+                    <div class="gallery-container mx-auto">
+                        <div class="gallery-layout">
+                            <div class="image-box coffee-box">
+                                <img src="img/banner1-292x292.png.png" alt="กาแฟและเมล็ดกาแฟบนโต๊ะไม้">
+                            </div>
+
+                            <div class="image-box red-box">
+                                <img src="img/Background.png" alt="พื้นหลังสีแดง">
+                            </div>
+
+                            <div class="image-box dessert-box">
+                                <img src="img/Container.png" alt="ขนมหวานในแก้วพร้อมผลเบอร์รี่">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </section>
 
+        <!-- Experts Section -->
+        <section class="experts-section">
+            <h2 class="experts-title">Meet Our Experts</h2>
+
+            <div class="experts-cards">
+                <div class="expert-card">
+                    <div class="expert-image">
+                        <img src="img/Container (1).png" alt="Chef Room Minal">
+                    </div>
+                </div>
+
+                <div class="expert-card">
+                    <div class="expert-image">
+                        <img src="img/Container (2).png" alt="Chef Room Minal">
+                    </div>
+                </div>
+
+                <div class="expert-card">
+                    <div class="expert-image">
+                        <img src="img/Container (3).png" alt="Chef Room Minal">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
