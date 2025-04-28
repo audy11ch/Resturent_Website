@@ -635,10 +635,16 @@ nav ul li a {
     width: 630px;
     height: 335px;
 }
-.dis-menu-container{
+.dis-menu-postion{
     position: relative;
 }
 .dis-menu-text{
     position: absolute;
-    top: 20px;
+    top: 20%;
+    right: 50%;
+    text-align: left;
 }
+.dis-menu-text h1 {
+    color: rgb(255, 255, 255);
+    color: white;
+  }
