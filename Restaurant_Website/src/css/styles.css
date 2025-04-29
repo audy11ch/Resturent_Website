@@ -1897,3 +1897,17 @@ nav ul li a {
         width: 80px;
     }
 }
+.text-bar{
+    width: 220px;
+    height: 10px;
+    background-color: #FFD40D;
+    
+}
+.reserve-box{
+    background-color: #ef3c52;
+    border-radius: 30px;
+}
+.reserve-box h2{
+    font-size: 2rem;
+    line-height: 1.2;
+}
