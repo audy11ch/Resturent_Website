@@ -2089,3 +2089,12 @@ width: 10%;
     font-weight: bold;
     font-size: 14px;
 }
+.experts-img img{
+    width: 260px;
+    height: 275px;
+    border-radius: 10%;
+}
+.custom-date-badge {
+    border-radius: 0.5rem;
+    padding: 0.5em 1em;
+  }
