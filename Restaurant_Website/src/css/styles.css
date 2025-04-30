@@ -1920,3 +1920,174 @@ nav ul li a {
     border-radius: 0.5rem;
     padding: 0.5em 1em;
   }
+  .main-container {
+    margin: 0 auto;
+    display: flex;
+    background-color: #f9f9f9;
+    justify-content: end;
+}
+
+.left-image, .right-image {
+    width: 10%;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+}
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+/* Left side - Pizza card */
+.brand-card {
+    background-color: #e41e26;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 280px;
+    margin-right: 40px;
+}
+
+.brand-card h2 {
+    font-size: 20px;
+    text-transform: lowercase;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.brand-card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.hours {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.tripadvisor {
+    font-size: 14px;
+}
+
+/* Center content - Menus */
+.sections-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.menu-section {
+    margin-right: 40px;
+    min-width: 150px;
+}
+
+.menu-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    position: relative;
+}
+
+.menu-section h3:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 35px;
+    height: 3px;
+    background-color: #ffcc00;
+}
+
+.menu-links a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.menu-links a:hover {
+    color: #e41e26;
+}
+
+.menu-links a:before {
+    content: "❯";
+    margin-right: 8px;
+    font-size: 12px;
+}
+
+/* Newsletter section */
+.newsletter {
+    min-width: 200px;
+}
+
+.newsletter p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.newsletter-form button {
+    background-color: #e41e26;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+/* Bottom section */
+.footer {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ffcc00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #666;
+}
+
+.copyright a {
+    color: #e41e26;
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links a {
+    margin-left: 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
